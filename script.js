@@ -34,6 +34,7 @@ function inputMode(main) {
     let textArea = document.createElement("textArea");
     textArea.classList.add("main");
     textArea.classList.add("textArea");
+    textArea.placeholder="'#' for header \n'-'for list item";
     textArea.value = main.notMarked || "";
     main.before(textArea);
     textArea.focus();
